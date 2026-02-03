@@ -1,0 +1,41 @@
+:root {
+    /* Brand Colors */
+    --color-neon-green: #39ff14;
+    --color-neon-pink: #ff00ff;
+    --color-neon-cyan: #00ffff;
+    --color-chrome: #e0e0e0;
+    --color-chrome-dark: #a0a0a0;
+    --color-black: #050505;
+    --color-dark-gray: #111111;
+
+    /* Gradients */
+    --gradient-chrome: linear-gradient(135deg, #e0e0e0 0%, #ffffff 50%, #a0a0a0 100%);
+    --gradient-holographic: linear-gradient(90deg, #ff00ff, #00ffff, #39ff14, #ff00ff);
+
+    /* Typography */
+    --font-display: 'Syncopate', sans-serif;
+    --font-body: 'Space Mono', monospace;
+
+    /* Spacing */
+    --space-unit: 8px;
+    --space-xs: calc(var(--space-unit) * 1);
+    --space-sm: calc(var(--space-unit) * 2);
+    --space-md: calc(var(--space-unit) * 4);
+    --space-lg: calc(var(--space-unit) * 8);
+    --space-xl: calc(var(--space-unit) * 16);
+
+    /* Effects */
+    --glow-green: 0 0 10px var(--color-neon-green), 0 0 20px var(--color-neon-green);
+    --glow-pink: 0 0 10px var(--color-neon-pink), 0 0 20px var(--color-neon-pink);
+    --border-chrome: 1px solid var(--color-chrome);
+}
+
+@keyframes holographic-scroll {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    100% {
+        background-position: 200% 50%;
+    }
+}

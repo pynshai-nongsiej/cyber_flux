@@ -1,0 +1,110 @@
+.lookbook-section {
+    position: relative;
+    height: 300vh;
+    /* Determines scroll length */
+    background: var(--color-black);
+}
+
+.lookbook-header {
+    position: absolute;
+    top: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    z-index: 10;
+    width: 100%;
+}
+
+.lookbook-header h2 {
+    font-size: 2rem;
+    color: var(--color-neon-green);
+    text-shadow: 0 0 10px rgba(57, 255, 20, 0.5);
+    margin-bottom: var(--space-sm);
+}
+
+.lookbook-header p {
+    color: var(--color-chrome-dark);
+    font-family: var(--font-body);
+    letter-spacing: 2px;
+}
+
+.lookbook-container {
+    position: sticky;
+    top: 0;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    background: radial-gradient(circle at center, #111 0%, #000 70%);
+}
+
+.lookbook-track {
+    display: flex;
+    gap: var(--space-xl);
+    padding-left: 50vw;
+    /* Start roughly in center */
+}
+
+.lookbook-card {
+    min-width: 400px;
+    height: 600px;
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    transition: transform 0.3s;
+}
+
+.lookbook-card:hover {
+    border-color: var(--color-neon-cyan);
+    box-shadow: 0 0 20px rgba(0, 255, 255, 0.1);
+    transform: scale(1.02);
+}
+
+.card-image-wrapper {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: var(--space-lg);
+    position: relative;
+    overflow: hidden;
+}
+
+.card-image-wrapper img {
+    width: 100%;
+    max-height: 400px;
+    object-fit: contain;
+    transition: transform 0.5s;
+}
+
+.lookbook-card:hover img {
+    transform: scale(1.1) rotate(-5deg);
+}
+
+.card-info {
+    padding: var(--space-md);
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.card-info h3 {
+    font-size: 1.2rem;
+    color: var(--color-chrome);
+}
+
+.card-price {
+    font-family: var(--font-body);
+    color: var(--color-neon-pink);
+}
+
+@media (max-width: 768px) {
+    .lookbook-card {
+        min-width: 300px;
+        height: 450px;
+    }
+}

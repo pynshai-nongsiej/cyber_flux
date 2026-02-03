@@ -1,0 +1,17 @@
+.layout {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.layout-content {
+    flex: 1;
+    padding-top: 80px;
+    /* Navbar height */
+}
+
+.marquee-wrapper {
+    background: var(--color-neon-green);
+    z-index: 900;
+    position: relative;
+}
