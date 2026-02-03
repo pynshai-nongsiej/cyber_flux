@@ -63,4 +63,4 @@
 
 ---
 
-*SYSTEM_STATUS: STABLE // VERSION: 1.0.0 // COPYRIGHT 2026*
+*SYSTEM_STATUS: https://cyber-flux.netlify.app/ STABLE // VERSION: 1.0.0 // COPYRIGHT 2026*
